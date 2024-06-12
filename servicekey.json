@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "resqfood-c241-ps375",
+  "private_key_id": "a3a1aa97fd96e2a9c111bdd78f709dafc22f304d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDIfT8AzjaE82DH\nhmWWGUia2PKKQywtjlNxtpe2ZD5gTVO1N+6qpJCvN3n7T4I3ce4a7rG23As2mNft\nZ7PiEsmHd3Of5jmuDcm7T6vdwVnCPK1ABZc1hkQ1UxgJWaGZYLiG6JvTYtDhUbpI\nr+uxLb/5R3kBNG1zkqzLv9RLR8oHVaO0iXh8MG1c3bj1aPoTTNbBXPakaQCCB/CK\nNtYtB7CTNDPHg1l/iJ/InjH1t6jRaowQwxCMsNcOy7WJJ6JJTYwb1jheJyzbuUqf\n0sbdcx44imn1XnDCUe9k3We3dxgXI7bLo9ySZ3IqfeWGUkEGJ1KQTUcJ9RYds1nG\npEfwkkj7AgMBAAECggEAKhtD1CN7B8kllkH/q9p7iSnvJmKdMKQnmkZC7qd3Ajq7\nTeAFXAlb6bC5CbLVIlfnLfjbkg/8uua20sFo4h4X/T91JSvxCUEUESbWbahh9Y1Q\nxZVnAHLGeHyPG8ebTN8nYg4QTAEA5ZGIkiOAWKHHI8+C9mHQaulvKQuMxpK5N3jB\n02R9QIlWn4AQlLD6LiSJzstejxsolxWtv+/vzulQOEVZLnTus05eeNWJUFdGEteD\n7xkX8/UtJDZC39iFoghujgrDOzA0p8qtJIYboxG6HuWrS3YCxizKdynIMNrxF9XH\n/vO4WYB+XdpC9fABbfbVy/fFI29cxa4Jd209f9ezAQKBgQDjopVZr9mSSiIfRPot\n0tShTiNWGhPQtgQHV5qPGBc7kQgfmHTVHj0VpMLGwK/8Bip3XAnloQoG2V9NDpRn\nGjmwMYfk+IhQy1pmasPvX4Yngv8IbT5kPNEvKCfbqZoDFcdm16dnOmfMpdey7sCV\nlH/c9U93YbrPyHQ8AhCunxB2WwKBgQDheLonL5xuvE7UmPgBwncE9KdpcMhb32QE\nLHqBlEk6k8/yyH+UOOCsJ4CdUNfxDQ/k+AiRH1YlhCWGWOJvvCuUq9zFtXV/cJQR\nYY+xwDAfPnBViGYD0EetMT9XoS+NU/ZRNEU7SpdrOMCq9nHD4klG+xVMzsGGS4XP\nLW0LRkA54QKBgHCYvilTy1oKI2C2PM2nyJdVUDNJyN1m+w0qrv/y2aMUNSFzxu6X\n+30WN2Yab7JI1n6d3yNfidcjdHloKc3p8fkONvryWHMmczvPucVQycoHiOEBMGhi\nkNIzmauU8+Jsxmo/Z8Wu5SMcMVqHsGkMwEZqbPlPNRmMPLpmBxxo/7qbAoGAau/i\ngnFfZVnknYqLnfIIlw4eVLEMJh7WhfA+jjSxYpn2d7TGZZtwW9ZEdtiAArDqR/On\nxISzTAnX7lc71jjOBq5YgGDnAHF5mKDIEUsQx9DKYJbXo5lmVWtVGo+1SPd4jN0Y\ntN1U4aLCJpPKM1ig3ox5drtdJ/+r0C5AWKeSEKECgYEAq6xkPW2ELOqwIwOgLtQK\nVW7zawtpv0dosdc/5+fn7JOB2jEfzBm+mDVrXjAUN0AtPZQmemK91dW7VpcGVbnt\n6JqghrTIkkq2XngBrJVIo7v/qxtHvg1LvrahJb1pOvoqU7CLF8Jr0dYnGgbiCdHD\n5TWROu8gGKyfimN8uE7VeTM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "resqfood-service@resqfood-c241-ps375.iam.gserviceaccount.com",
+  "client_id": "109568718823582503501",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/resqfood-service%40resqfood-c241-ps375.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
