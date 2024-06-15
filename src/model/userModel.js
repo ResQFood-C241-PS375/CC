@@ -53,4 +53,18 @@ async function updateProfil(id, newData) {
   // return updated
 }
 
-module.exports = { storeData, getUsers, getUserById, updateProfil };
+async function getUserbyid (user_id){
+  const userRef = await db
+      .collection("users")
+      .where("user_id", "==", user_id)
+      .get();
+
+  let data = [];
+  userRef.forEach((item) => {
+      data.push(item.data());
+      console.log(data);
+  });
+  return data;
+}
+
+module.exports = { storeData, getUsers, getUserById, updateProfil, getUserbyid };

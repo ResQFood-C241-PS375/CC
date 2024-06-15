@@ -1,8 +1,8 @@
 const { Firestore } = require("@google-cloud/firestore");
-const { createDonation, getDonationById, getAllDonations } = require('../model/donationModel');
+const { createDonation, getDonationById, getAllDonations, getAllDonationsbyid, deleteDonationsbyid } = require('../model/donationModel');
 const { getUserById } = require('../model/userModel');
 const crypto = require('crypto');
-const { error } = require("console");
+const { error, profile } = require("console");
 
 const createDonationController = async (req, res) => {
     const { user_id, title, deskripsi, location } = req.body;
@@ -67,6 +67,7 @@ const getDonationByIdController = async (req, res) => {
                 user_id: user.user_id,
                 no_hp: user.no_hp,
                 nama_lengkap: user.nama_lengkap,
+                profile_img: user.profile_img,
                 donation: donation
             }
         });
@@ -92,4 +93,39 @@ const getAllDonationsController = async (req, res) => {
     }
 }
 
-module.exports = { createDonationController, getDonationByIdController, getAllDonationsController }
+const getAllDonationsbyidController = async (req, res) => {
+    const { id } = req.params;
+    try {
+        const donations = await getAllDonationsbyid(id);
+        
+        return res.status(200).json({
+            message: 'Semua donasi berhasil diambil!',
+            donations: donations
+        });
+    } catch (e) {
+        return res.status(500).json({
+            message: e.message,
+        });
+
+    }
+
+}
+
+const deleteDonationsbyidController = async (req, res) => {
+    const { id } = req.params;
+    try {
+        const donations = await deleteDonationsbyid(id);
+        
+        return res.status(200).json({
+            message: 'Donasi berhasil dihapus!',
+        });
+    } catch (e) {
+        return res.status(500).json({
+            message: e.message,
+        });
+
+    }
+
+}
+
+module.exports = { createDonationController, getDonationByIdController, getAllDonationsController, getAllDonationsbyidController, deleteDonationsbyidController }

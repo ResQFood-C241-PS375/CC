@@ -7,10 +7,10 @@ async function createDonation(id, data) {
     return donationsCollection.doc(id).set(data);
 }
 
-async function getDonationById(donation_id) {
+async function getDonationById(user_id) {
     const donationRef = await db
         .collection("donations")
-        .where("donation_id", "==", donation_id)
+        .where("user_id", "==", user_id)
         .get();
 
     let data;
@@ -31,4 +31,33 @@ async function getAllDonations() {
     return donations;
 }
 
-module.exports = { createDonation, getDonationById, getAllDonations };
+async function getAllDonationsbyid (user_id){
+    const donationRef = await db
+        .collection("donations")
+        .where("user_id", "==", user_id)
+        .get();
+
+    let data = [];
+    donationRef.forEach((item) => {
+        data.push(item.data());
+        console.log(data);
+    });
+    return data;
+}
+
+async function deleteDonationsbyid (user_id){
+    const donationCollection = db.collection("donations").doc(user_id);
+    const getDonations = await donationCollection.get();
+
+    if (!getDonations .exists) {
+        console.log("tidak ada data")
+    }
+
+    await donationCollection.delete();
+
+    return true;
+}
+
+
+
+module.exports = { createDonation, getDonationById, getAllDonations, getAllDonationsbyid, deleteDonationsbyid };

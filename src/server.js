@@ -17,7 +17,7 @@ const swaggerUi = require('swagger-ui-express');
 require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 
 app.use(express.urlencoded({ extended: false }));
 // app.use(formidableMiddleware())
@@ -34,7 +34,7 @@ app.use(
 // app.use('/docs', swaggerUi.serve, swaggerUi.setup(apiDocumentation));
 app.use('/', userRoute);
 app.use('/donation', donationRoute);
-//app.use('/sell', sellRoute);
+app.use('/sell', sellRoute);
 
 
 

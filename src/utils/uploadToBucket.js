@@ -28,8 +28,8 @@ bucketUpload.uploadToBucket = (req, res, next) => {
     } else if (req.file.fieldname == 'image') {
         path = 'donation_img/'
 
-    } else if (req.file.fieldname == 'room_image') {
-        path = 'room-image/'
+    } else if (req.file.fieldname == 'sell_img') {
+        path = 'sell_img/'
 
     }
 

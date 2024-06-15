@@ -1,9 +1,10 @@
 const { Firestore } = require("@google-cloud/firestore");
-const { User, storeData, getUsers, getUserById, updateProfil } = require('../model/userModel');
-// const { uploadToBucket } = require('../utils/uploadToBucket')
+const { User, storeData, getUsers, getUserById, updateProfil, getUserbyid } = require('../model/userModel');
+const { uploadToBucket } = require('../utils/uploadToBucket')
 const { generateAccessToken } = require('../middleware/authToken');
 const crypto = require('crypto');
 const bcrypt = require('bcrypt');
+const { error } = require("console");
 // const { use } = require("../UserRoute");
 
 require('dotenv').config()
@@ -45,6 +46,7 @@ const registerController = async (req, res) => {
 
     } catch (e) {
         return res.status(500).json({
+            error: true,
             message: e.message,
         });
 
@@ -61,7 +63,7 @@ const loginController = async (req, res) => {
     if (userSnapshot.empty) {
         return res.status(400).json({
             error: true,
-            message: 'User tidak ada, plese register!'
+            message: 'User tidak ada, please register!'
         })
         return false;
     }
@@ -115,7 +117,7 @@ const editProfilController = async (req, res) => {
         });
     } catch (error) {
         res.status(404).json({
-            error: false,
+            error: true,
             message: 'Gagal mengambil data'
         });
     }
@@ -160,4 +162,22 @@ const updateProfilController = async (req, res) => {
 
 }
 
-module.exports = { registerController, loginController, onLoginController, editProfilController, updateProfilController } 
+const getUserbyidController = async (req, res) => {
+    const { id } = req.params;
+    console.log(id)
+    try {
+        const users = await getUserbyid(id);
+        
+        return res.status(200).json({
+            message: 'Berhasil mengambil data user!',
+            users: users
+        });
+    } catch (e) {
+        return res.status(500).json({
+            message: e.message,
+        });
+
+    }
+}
+
+module.exports = { registerController, loginController, onLoginController, editProfilController, updateProfilController, getUserbyidController } 
