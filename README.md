@@ -9,6 +9,26 @@
 
 <br>
 
+| Method | Endpoint                 | Description                        |
+| ------ | ------------------------ | ---------------------------------- |
+| POST   | /register                | Create a user (register)           |
+| POST   | /login                   | Get user data                      |
+| PUT    | /profile/user_id         | ...                                |
+| GET    | /profile/user_id         | ...                                |
+| --     | --                       | --                                 |
+| --     | --                       | --                                 |
+| --     | --                       | --                                 |
+| --     | --                       | --                                 |
+| --     | --                       | --                                 |
+| GET    | /donation/user_id        | ...                                |
+| POST   | /donation                | ...                                |
+| GET    | /donation                | ...                                |
+| --     | --                       | --                                 |
+| GET    | /sell/user_id            | ...                                |
+| POST   | /sell                    | ...                                |
+| GET    | /sell                    | ...                                |
+| GET    | /sell/search=?title      | ...                                |
+| --     | --                       | --                                 |
 
 **Requirements & Tools :**
 
@@ -34,33 +54,8 @@
 
 <!-- ## Endpoints
 
-| Method | Endpoint                 | Description                        |
-| ------ | ------------------------ | ---------------------------------- |
-| GET    | /                        | Hello world                        |
-| GET    | /documentation           | Documentation                      |
-| --     | --                       | --                                 |
-| POST   | /users                   | Create a user (register)           |
-| GET    | /users/{id}              | Get user data                      |
-| PUT    | /users/{id}              | Update user data                   |
-| PUT    | /users/{id}/password     | Update user password               |
-| --     | --                       | --                                 |
-| POST   | /authentications         | Create a session (login)           |
-| PUT    | /authentications         | Update a session (refresh token)   |
-| DELETE | /authentications         | Delete a session (logout)          |
-| --     | --                       | --                                 |
-| POST   | /predictions             | Create a prediction (upload image) |
-| GET    | /predictions/{userId}    | Get log predictions from a user    |
-| --     | --                       | --                                 |
-| GET    | /diseases/{nameDiseases} | Get disease description            |
-| POST   | /diseases                | Create a disease description       |
-| PUT    | /diseases/{nameDiseases} | Update a disease description       |
-| DELETE | /diseases/{nameDiseases} | Delete a disease description       |
-| --     | --                       | --                                 |
-| POST   | /articles                | Create an article                  |
-| GET    | /articles/               | Get all article                    |
-| GET    | /articles/{id}           | Get an article                     |
-| PUT    | /articles/{id}           | Update an article                  |
-| DELETE | /articles/{id}           | Delete an article                  |
+
+
 
 ## Checklist
 
