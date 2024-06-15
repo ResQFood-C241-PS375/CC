@@ -9,26 +9,25 @@
 
 <br>
 
-| Method | Endpoint                 | Description                        |
-| ------ | ------------------------ | ---------------------------------- |
-| POST   | /register                | Create a user (register)           |
-| POST   | /login                   | Get user data                      |
-| PUT    | /profile/user_id         | ...                                |
-| GET    | /profile/user_id         | ...                                |
-| --     | --                       | --                                 |
-| --     | --                       | --                                 |
-| --     | --                       | --                                 |
-| --     | --                       | --                                 |
-| --     | --                       | --                                 |
-| GET    | /donation/user_id        | ...                                |
-| POST   | /donation                | ...                                |
-| GET    | /donation                | ...                                |
-| --     | --                       | --                                 |
-| GET    | /sell/user_id            | ...                                |
-| POST   | /sell                    | ...                                |
-| GET    | /sell                    | ...                                |
-| GET    | /sell/search=?title      | ...                                |
-| --     | --                       | --                                 |
+| Method | Endpoint                   | Description                        |
+| ------ | ------------------------   | ---------------------------------- |
+| POST   | /register                  | Create a user (register)           |
+| POST   | /login                     | Get user data                      |
+| PUT    | /profile/user_id           | On Going                           |
+| GET    | /profile/user_id           | ...                                |
+| GET    | /profile/donation/:user_id | --                                 |
+| DELETE | /profile/donation/:dont_id | --                                 |
+| GET    | /profile/sell/:user_id     | --                                 |
+| DELETE | /profile/sell/:sell_id     | --                                 |
+| --     | --                         | --                                 |
+| GET    | /donation/user_id          | ...                                |
+| POST   | /donation                  | ...                                |
+| GET    | /donation                  | ...                                |
+| --     | --                         | --                                 |
+| GET    | /sell/user_id              | ...                                |
+| POST   | /sell                      | ...                                |
+| GET    | /sell                      | ...                                |
+| GET    | /sell/search=?title        | ...                                |
 
 **Requirements & Tools :**
 
