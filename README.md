@@ -9,25 +9,25 @@
 
 <br>
 
-| Method | Endpoint                   | Description                        |
-| ------ | ------------------------   | ---------------------------------- |
-| POST   | /register                  | Create a user (register)           |
-| POST   | /login                     | Get user data                      |
-| PUT    | /profile/user_id           | On Going                           |
-| GET    | /profile/user_id           | ...                                |
-| GET    | /profile/donation/:user_id | --                                 |
-| DELETE | /profile/donation/:dont_id | --                                 |
-| GET    | /profile/sell/:user_id     | --                                 |
-| DELETE | /profile/sell/:sell_id     | --                                 |
-| --     | --                         | --                                 |
-| GET    | /donation/user_id          | ...                                |
-| POST   | /donation                  | ...                                |
-| GET    | /donation                  | ...                                |
-| --     | --                         | --                                 |
-| GET    | /sell/user_id              | ...                                |
-| POST   | /sell                      | ...                                |
-| GET    | /sell                      | ...                                |
-| GET    | /sell/search=?title        | ...                                |
+| Method | Endpoint                       | Description                        |
+| ------ | ------------------------------ | ---------------------------------- |
+| POST   | /register                      | Create a user (register)           |
+| POST   | /login                         | Get user data                      |
+| PUT    | /profile/user_id               | Edit user data                     |
+| GET    | /profile/user_id               | View user data                     |
+| GET    | /profile/donation/:user_id     | View posted donation's user        |
+| DELETE | /profile/donation/:donation_id | Delete user's donation post        |
+| GET    | /profile/sell/:user_id         | View posted sell's user            |
+| DELETE | /profile/sell/:sell_id         | Delete user's sell post            |
+| --     | --                             | --                                 |
+| GET    | /donation/user_id              | View donation's user               |
+| POST   | /donation                      | Create donation post               |
+| GET    | /donation                      | Display all donations created      |
+| --     | --                             | --                                 |
+| GET    | /sell/user_id                  | View sell's user                   |
+| POST   | /sell                          | Create sell post                   |
+| GET    | /sell                          | Display all sells created          |
+| GET    | /sell/search=?title            | Search sell by title               |
 
 **Requirements & Tools :**
 
